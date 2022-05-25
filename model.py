@@ -48,10 +48,8 @@ def _preprocess_data(data):
     feature_vector_dict = json.loads(data)
     # Load the dictionary as a Pandas DataFrame.
     feature_vector_df = pd.DataFrame.from_dict([feature_vector_dict])
-    new_f = ['Madrid_wind_speed', 'Seville_humidity', 'Madrid_humidity',
-       'Barcelona_pressure', 'Bilbao_pressure', 'Seville_temp_max',
-       'Valencia_humidity', 'Valencia_temp_min', 'Bilbao_temp',
-       'Barcelona_temp_min', 'Hour', 'Day', 'Month', 'Year']
+    new_f = ['Madrid_wind_speed', 'Bilbao_wind_deg', 'Bilbao_pressure',
+       'Valencia_temp_min', 'Day', 'Month', 'Start_hour']
 
     # ---------------------------------------------------------------
     # NOTE: You will need to swap the lines below for your own data
