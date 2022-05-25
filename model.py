@@ -49,7 +49,7 @@ def _preprocess_data(data):
     # Load the dictionary as a Pandas DataFrame.
     feature_vector_df = pd.DataFrame.from_dict([feature_vector_dict])
     new_f = ['Madrid_wind_speed', 'Bilbao_wind_deg', 'Bilbao_pressure',
-       'Valencia_temp_min', 'Day', 'Month', 'Start_hour']
+                 'Valencia_temp_min']
 
     # ---------------------------------------------------------------
     # NOTE: You will need to swap the lines below for your own data

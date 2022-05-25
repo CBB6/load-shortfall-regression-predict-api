@@ -19,7 +19,7 @@ train = pd.read_csv('./data/df_train.csv')
 
 y_train = train[['load_shortfall_3h']]
 X_train = train[['Madrid_wind_speed', 'Bilbao_wind_deg', 'Bilbao_pressure',
-                 'Valencia_temp_min', 'Day', 'Month', 'Start_hour']]
+                 'Valencia_temp_min']]
 
 # Fit model
 lm_regression = LinearRegression(normalize=True)
